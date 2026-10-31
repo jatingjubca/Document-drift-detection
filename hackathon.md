@@ -1,65 +1,79 @@
-# Automated Documentation Drift Detection
+# 🚀 Automated Documentation Drift Detection
 
-**An AI-powered tool to detect outdated documentation when source code changes.**
+## 📌 About the Project
 
-## Overview
+Automated Documentation Drift Detection is an AI-powered tool that identifies outdated documentation by comparing source code changes with existing project documentation.
 
-Documentation Drift Detection helps developers identify when project documentation no longer matches the actual source code.
+## 🎯 Problem Statement
 
-When developers modify functions, APIs, configurations, or application behaviour, the related documentation may remain unchanged. This creates documentation drift.
+Developers frequently update source code but forget to update the related documentation. This creates documentation drift, resulting in incorrect information, confusion, and increased maintenance efforts.
 
-Our tool automates the detection process using code analysis, semantic search, and AI verification.
+## 💡 Our Solution
 
-## How It Works
+Our solution uses AI and automated code analysis to:
 
-1. **Detect Changes:** Monitor GitHub Pull Requests.
-2. **Extract Facts:** Identify important changes in the source code.
-3. **Search Documentation:** Find related documentation sentences.
-4. **AI Verification:** Compare documentation with the updated code using an LLM.
-5. **Report Issues:** Post possible documentation mismatches as GitHub PR comments.
+- Detect code changes in GitHub Pull Requests.
+- Extract important facts from modified code.
+- Find related documentation.
+- Use an LLM to verify documentation accuracy.
+- Report possible mismatches to developers.
 
-## Key Features
+## ⚙️ Technologies Used
 
-- Automatic documentation drift detection.
-- GitHub Pull Request integration.
-- AI-powered code and documentation comparison.
+- Python
+- HTML
+- CSS
+- JavaScript
+- Git & GitHub API
+- GitHub Actions
+- Ollama
+- Gemma LLM
+
+## ✨ Features
+
+- Automatic code change detection.
+- AI-powered documentation verification.
 - Semantic documentation search.
-- Reduced false-positive warnings.
-- Local CLI support.
+- GitHub Pull Request integration.
+- Automated documentation drift reports.
 
-## Access Methods
+## 🛠️ Installation
 
-- **GitHub App:** Automatically checks Pull Requests.
-- **GitHub Actions:** Runs inside your own CI/CD workflow.
-- **CLI:** Checks documentation locally before submitting a PR.
+**1. Clone the repository**
 
-## Technology Stack
+```bash
+git clone <https://github.com/jatingjubca/Document-drift-detection/tree/main>
+cd <document-drift-detection>
+```
 
-| Technology | Purpose |
-|---|---|
-| Python | Core development |
-| GitHub API | Repository integration |
-| GitHub Actions | Automation |
-| LLM (Gemma / OpenAI) | AI verification |
-| Embeddings | Semantic search |
+**2. Install dependencies**
 
-## Development Estimates
+```bash
+pip install -r requirements.txt
+```
 
-- **Development Time:** 14–20 person-days (one developer).
-- **Two Developers:** Approximately 8–10 person-days.
-- **Running Cost:** Approximately $0.01–$0.06 per PR.
-- **Monthly Cost:** Approximately $1–$13 for 50 PRs.
+**3. Configure environment variables**
 
-*These are estimated figures based on the project proposal.*
+Add the required API keys and configuration settings.
 
-## Project Goal
+**4. Run the project**
 
-To make software documentation more accurate, reliable, and easier to maintain by automatically identifying mismatches between code and documentation.
+Follow the execution instructions provided in the project source code.
 
-**Keep documentation in sync with code.**
+## 👥 Team Members
 
-## References
+- Jatin Kumar
+- Priyanshu Joshi
+- Monu Bioshnoi
 
-- [GitHub Octoverse 2024](https://github.blog/news-insights/octoverse/octoverse-2024/)
-- [GitHub Actions](https://docs.github.com/en/actions)
-- [OpenAI API](https://platform.openai.com/docs)
+## 🔮 Future Scope
+
+- GitHub Marketplace integration.
+- Support for multiple programming languages.
+- Improved AI accuracy and reduced false positives.
+- Interactive dashboard for documentation reports.
+- Support for more local and cloud-based AI models.
+
+---
+
+**Built with ❤️ for Hackathon 2026.**
